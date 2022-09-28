@@ -16,6 +16,17 @@
     </div>
   </body>
   <script>
-    //code here
+    const inputVal = document.getElementById("input");
+    const outputVal = document.getElementById("output");
+
+    function update() {
+      if (inputVal.value) {
+        outputVal.innerText = inputVal.value;
+        outputVal.style.color = "green";
+      } else {
+        outputVal.innerText = "Input Box Is Empty... Start Typing";
+        outputVal.style.color = "red";
+      }
+    }
   </script>
 </html>
